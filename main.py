@@ -190,7 +190,7 @@ async def start(update: Update, context: CallbackContext):
     await update.message.reply_text("Привет! Я твой чат-бот.")
 
 def main():
-    application = ApplicationBuilder().token("8167413265:AAHTu91e1aVSaVBRhvwGCB7iFH9dk7nvw9Q").build()
+    application = ApplicationBuilder().token("").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("text", broadcast_message))
